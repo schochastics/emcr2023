@@ -1,0 +1,32 @@
+---
+title: "Learning to work with R packages"
+subtitle: ""
+author: "David Schoch"
+footer: "EMCR Workshop 2023 {{< fa brands r-project >}}"
+institute: "GESIS - Leibniz Institute for the Social Sciences"
+shortcodes:
+  - misc.lua
+format: 
+  revealjs: 
+    menu: true
+    progress: false
+    theme: "schochastics.scss"
+    slide-number: c/t
+    show-slide-number: all
+    code-line-numbers: false
+execute: 
+  cache: true
+  echo: true
+---
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+#| label: setup
+
+```
+
+## My R universe
+
+<img src="img/hex_bg.png" width="400">
+
