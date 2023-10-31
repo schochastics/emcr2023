@@ -22,6 +22,16 @@ execute:
 
 <img src="img/hex_bg.png" width="400">
 
+# Why R?
+
+## R is weird
+
+```{r}
+#| label: weird
+
+`
+```
+
 # Using R packages
 
 ## 
@@ -38,6 +48,12 @@ citation("graphlayouts")
 ```
 
 or use {{< CRAN grateful >}}
+
+## Helpful places
+
+- [rOpenSci](https://ropensci.org/)
+- [R for the rest of us](https://rfortherestofus.com/)
+- [R4DS online learning community](https://rfordatasci.com/) (e.g. [TidyTuesday](https://github.com/rfordatascience/tidytuesday))
 
 ## Get help
 
