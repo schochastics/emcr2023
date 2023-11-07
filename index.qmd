@@ -84,7 +84,7 @@ Copying pieces of code from script to script?
 . . .
 
 Copying functions from project to project?  
-**Make a package out of it
+**Make a package out of it**
 
 ## Your first R package
 
