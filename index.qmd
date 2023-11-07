@@ -70,9 +70,15 @@ or use {{< CRAN grateful >}}
 - [R for the rest of us](https://rfortherestofus.com/)
 - [R4DS online learning community](https://rfordatasci.com/) (e.g. [TidyTuesday](https://github.com/rfordatascience/tidytuesday))
 
-## Get help
+## (How to) get help
 
 See <https://masalmon.eu/2018/07/22/wheretogethelp/>
+
+## Resources
+
+- [R for Data Science](https://r4ds.had.co.nz/)
+
+- [Advanced R](https://adv-r.hadley.nz/)
 
 # Developing R packages
 
@@ -87,6 +93,14 @@ Copying functions from project to project?
 **Make a package out of it**
 
 ## Your first R package
+
+
+> *It doesn’t matter if your first version isn’t perfect as long as the next version is better.*  
+Hadley Wickham/Jenny Brian
+
+## Resources
+
+- [R Packages (2e)](https://r-pkgs.org/)
 
 ## Maintaining R packages
 
