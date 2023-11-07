@@ -26,11 +26,6 @@ execute:
 
 ## R is weird
 
-```{r}
-#| label: weird
-
-`
-```
 
 # Using R packages
 
@@ -61,7 +56,28 @@ See <https://masalmon.eu/2018/07/22/wheretogethelp/>
 
 # Developing R packages
 
+## Why packages?
+
+Copying pieces of code from script to script?  
+**Make a function out of it**
+
+. . .
+
+Copying functions from project to project?  
+**Make a package out of it
+
 ## Your first R package
+
+## Maintaining R packages
+
+
+## Appreciate developers
+
+![](img/collapse.jpg)
+
+##
+
+![](img/open-source-developers.jpg)
 
 ## Sustainability
 
