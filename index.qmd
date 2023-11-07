@@ -24,12 +24,32 @@ execute:
 
 # Why R?
 
-## R is weird
-
-
 # Using R packages
 
-## 
+## Finding the right package
+
+- [CRAN taskviews](https://cran.r-project.org/web/views/)  (available since 2005, [redesigned in 2021](https://arxiv.org/abs/2305.17573))
+
+- [r-universe.dev](https://r-universe.dev/) 
+
+- [r-bloggers.com](https://www.r-bloggers.com/)
+
+- social media
+
+##
+
+![](img/runiverse.png)
+
+## Finding the right package
+
+- [CRAN taskviews](https://cran.r-project.org/web/views/)  (available since 2005, [redesigned in 2021](https://arxiv.org/abs/2305.17573))
+
+- [r-universe.dev](https://r-universe.dev/) 
+
+- [r-bloggers.com](https://www.r-bloggers.com/)
+
+- social media
+
 
 ::: {.r-fit-text}
 CITE PACKAGES!
