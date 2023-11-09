@@ -69,10 +69,7 @@ or use {{< CRAN grateful >}}
 - [rOpenSci](https://ropensci.org/)
 - [R for the rest of us](https://rfortherestofus.com/)
 - [R4DS online learning community](https://rfordatasci.com/) (e.g. [TidyTuesday](https://github.com/rfordatascience/tidytuesday))
-
-## (How to) get help
-
-See <https://masalmon.eu/2018/07/22/wheretogethelp/>
+- [Help to get help](https://masalmon.eu/2018/07/22/wheretogethelp/)
 
 ## Resources
 
@@ -106,6 +103,10 @@ Hadley Wickham/Jenny Brian
 
 ![](img/bus-rpkg.jpg)
 
+## Maintaining R packages
+
+- 
+
 ## Appreciate developers
 
 ![](img/collapse.jpg)
@@ -113,8 +114,6 @@ Hadley Wickham/Jenny Brian
 ##
 
 ![](img/open-source-developers.jpg)
-
-## Sustainability
 
 
 
