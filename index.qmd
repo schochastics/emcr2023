@@ -104,6 +104,7 @@ Hadley Wickham/Jenny Brian
 
 ## Maintaining R packages
 
+![](img/bus-rpkg.jpg)
 
 ## Appreciate developers
 
