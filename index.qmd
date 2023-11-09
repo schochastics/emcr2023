@@ -22,11 +22,123 @@ execute:
 
 <img src="img/hex_bg.png" width="400">
 
-# Why R?
+## Why R?
+
+<br>
+
+::::{.columns}
+
+:::{.column width="32%"}
+:::{.frame-box .center-x}
+{{< fa door-open size=2x >}}  
+open source
+:::
+:::
+:::{.column width="32%"}
+:::{.frame-box .center-x}
+{{< fa brands apple size=2x >}} {{< fa brands ubuntu size=2x >}} {{< fa brands windows size=2x >}}  
+cross-platform
+:::
+:::
+:::{.column width="32%"}
+:::{.frame-box .center-x}
+{{< fa box-open size=2x >}}  
+CRAN
+:::
+:::
+::::
+
+:::{.column width="32%"}
+:::{.frame-box .center-x}
+{{< fa repeat size=2x >}}  
+reproducibility
+:::
+:::
+
+:::{.column width="32%"}
+:::{.frame-box .center-x}
+{{< fa chart-pie size=2x >}}  
+more than SNA
+:::
+:::
+
+:::{.column width="32%"}
+:::{.frame-box .center-x}
+{{< fa comments size=2x >}}  
+community  
+:::
+:::
+
 
 # Using R packages
 
+## Basics for networks
+
+```{r}
+#| label: cranet
+#| echo: false
+library(ggraph)
+g <- readRDS("dependnet.RDS")
+ggraph(g, "stress") +
+    geom_edge_link0(
+        edge_color = "grey66", edge_width = 0.3,
+        arrow = arrow(
+            angle = 15, length = unit(0.15, "inches"),
+            ends = "last", type = "closed"
+        )
+    ) +
+    geom_node_point(shape = 21, aes(fill = dep, size = seed)) +
+    scale_fill_brewer(type = "qual", name = "") +
+    scale_size_manual(values = c(2, 5), guide = "none") +
+    guides(fill = guide_legend(override.aes = list(size = 5))) +
+    theme_void() +
+    theme(legend.position = "bottom") +
+    coord_equal(clip = "off")
+
+```
+
+## Which package to choose?
+
+<br>
+
+use `igraph` if
+
+- you need speed (large networks)
+- you need to use other SNA packages
+
+:::{.fragment}
+use `network`/`sna` if
+
+- you need to do modeling (e.g. ERGMs and RSIENA)
+:::
+
+:::{.fragment}
+**does not make a difference in most cases, never load them both!**
+:::
+
+## Small overview of the network Ecosystem
+
+- Analyze "standard" networks with {{< CRAN igraph >}}
+
+- Analyze two-mode network projections with {{< CRAN backbone >}}
+
+- Analyze signed networks with {{< CRAN signnet >}}
+
+- Missing something? try {{< CRAN netUtils >}}
+
+- Need toy data? use [networkdata](https://github.com/schochastics/networkdata)
+
+- Need a GUI to analyze networks in RStudio? try {{< CRAN snahelper >}}
+
+- "I like my networks tidy" {{< CRAN tidygraph >}}
+
+- "Is there a ggplot2 for networks?" {{< CRAN ggraph >}}
+
+- ...
+
 ## Finding the right package
+
+<br>
 
 - [CRAN taskviews](https://cran.r-project.org/web/views/)  (available since 2005, [redesigned in 2021](https://arxiv.org/abs/2305.17573))
 
@@ -50,9 +162,11 @@ execute:
 
 - social media
 
+## 
 
 ::: {.r-fit-text}
-CITE PACKAGES!
+CITE  
+PACKAGES!
 :::
 
 ## How to cite R packages
@@ -64,14 +178,16 @@ citation("graphlayouts")
 
 or use {{< CRAN grateful >}}
 
-## Helpful places
-
-- [rOpenSci](https://ropensci.org/)
-- [R for the rest of us](https://rfortherestofus.com/)
-- [R4DS online learning community](https://rfordatasci.com/) (e.g. [TidyTuesday](https://github.com/rfordatascience/tidytuesday))
-- [Help to get help](https://masalmon.eu/2018/07/22/wheretogethelp/)
 
 ## Resources
+
+- [rOpenSci](https://ropensci.org/)
+
+- [R for the rest of us](https://rfortherestofus.com/)
+
+- [R4DS online learning community](https://rfordatasci.com/) (e.g. [TidyTuesday](https://github.com/rfordatascience/tidytuesday))
+
+- [Help to get help](https://masalmon.eu/2018/07/22/wheretogethelp/)
 
 - [R for Data Science](https://r4ds.had.co.nz/)
 
@@ -79,25 +195,69 @@ or use {{< CRAN grateful >}}
 
 # Developing R packages
 
-## Why packages?
+## Why develop an R package?
 
-Copying pieces of code from script to script?  
-**Make a function out of it**
+<br>
 
-. . .
+Easiest way to share code and data with
 
-Copying functions from project to project?  
-**Make a package out of it**
+- yourself to organize your own utility functions
+
+- your collaborators as a package for your team
+
+- everyone! your package could help other R without being a general purpose tool
+
+:::{.aside}
+credits to [Maëlle Salmon](https://masalmon.eu/2023/11/09/r-package-development-teaching-intro/) for the content
+:::
+
+## Who can learn about package development?
+
+<br>
+
+Ask yourself: 
+
+- Can you open R or RStudio?
+
+- Can you install a package?
+
+- Have you ever written a function in R?
+
+- Could you learn how to write a function in R?
+
+. . . 
+
+**Congrats, you can develop an R package**
+
+:::{.aside}
+credits to [Susan Johnston](https://raw.githubusercontent.com/susjoh/fibonacci/master/Writing_R_Packages_from_Scratch_v2_annotated.pdf) for the content
+:::
 
 ## Your first R package
 
+<br>
 
 > *It doesn’t matter if your first version isn’t perfect as long as the next version is better.*  
 Hadley Wickham/Jenny Brian
 
+. . . 
+
+A package is just a folder with rules where a lot of boring things can be automated with {{< CRAN usethis >}}
+
+```r
+library(usethis)
+create_package("path/to/mypkg")
+```
+
+##
+
+![](img/automagic.jpg)
+
 ## Resources
 
 - [R Packages (2e)](https://r-pkgs.org/)
+
+- [List of resources by Maëlle Salmon](https://rpkgdev-mechanics.netlify.app/resources/)
 
 ## Maintaining R packages
 
