@@ -72,7 +72,7 @@ community
 
 # Using R packages
 
-## Basics for networks
+## R Ecosystem for networks
 
 ```{r}
 #| label: cranet
@@ -116,7 +116,7 @@ use `network`/`sna` if
 **does not make a difference in most cases, never load them both!**
 :::
 
-## Small overview of the network Ecosystem
+## Small overview
 
 - Analyze "standard" networks with {{< CRAN igraph >}}
 
@@ -142,9 +142,9 @@ use `network`/`sna` if
 
 - [CRAN taskviews](https://cran.r-project.org/web/views/)  (available since 2005, [redesigned in 2021](https://arxiv.org/abs/2305.17573))
 
-- [r-universe.dev](https://r-universe.dev/) 
+- [r-universe.dev](https://r-universe.dev/) (R package dashboards)
 
-- [r-bloggers.com](https://www.r-bloggers.com/)
+- [r-bloggers.com](https://www.r-bloggers.com/) (blog aggregator)
 
 - social media
 
@@ -162,7 +162,30 @@ use `network`/`sna` if
 
 - social media
 
-## 
+## Using R packages
+
+
+Help for a function
+```r
+?function_name
+help(function_name)
+??function_name
+```
+
+. . .
+
+Help for the package
+
+```r
+browseVignettes(package = "name-of-package")
+vignette("name-of-vignette")
+```
+
+. . .
+
+{{< CRAN pkgdown >}} website
+
+##
 
 ::: {.r-fit-text}
 CITE  
@@ -180,6 +203,8 @@ or use {{< CRAN grateful >}}
 
 
 ## Resources
+
+<br>
 
 - [rOpenSci](https://ropensci.org/)
 
