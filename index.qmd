@@ -154,6 +154,8 @@ use `network`/`sna` if
 
 ## Finding the right package
 
+You don’t need to write everything yourself from scratch. There are thousands of R packages that people have written to solve problems. 
+
 - [CRAN taskviews](https://cran.r-project.org/web/views/)  (available since 2005, [redesigned in 2021](https://arxiv.org/abs/2305.17573))
 
 - [r-universe.dev](https://r-universe.dev/) 
