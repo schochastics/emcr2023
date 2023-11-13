@@ -230,7 +230,7 @@ Easiest way to share code and data with
 
 - your collaborators as a package for your team
 
-- everyone! your package could help other R without being a general purpose tool
+- everyone! your package could help other R users without being a general purpose tool
 
 :::{.aside}
 credits to [Maëlle Salmon](https://masalmon.eu/2023/11/09/r-package-development-teaching-intro/) for the content
@@ -267,16 +267,28 @@ Hadley Wickham/Jenny Brian
 
 . . . 
 
-A package is just a folder with rules where a lot of boring things can be automated with {{< CRAN usethis >}}
+A package is just a folder with rules where a lot of boring things can be automated with {{< CRAN usethis >}} and {{< CRAN devtools >}}.
 
 ```r
 library(usethis)
 create_package("path/to/mypkg")
 ```
+. . .
+
+Your first packge **does not** need to go to CRAN but can comfortably live on [GitHub](https://happygitwithr.com/).
+
+```r
+#install.packages("remotes")
+remotes::install_github("username/pkgname")
+```
+
+
 
 ##
 
+:::{.center-x}
 ![](img/automagic.jpg)
+:::
 
 ## Resources
 
@@ -284,21 +296,57 @@ create_package("path/to/mypkg")
 
 - [List of resources by Maëlle Salmon](https://rpkgdev-mechanics.netlify.app/resources/)
 
-## Maintaining R packages
+##
 
-![](img/bus-rpkg.jpg)
+:::{.center-x}
+![](img/mad_scientist.webp){width=600}
+:::
 
-## Maintaining R packages
+:::{.text04}
+Created with DALL E
+:::
 
-- 
-
-## Appreciate developers
-
-![](img/collapse.jpg)
 
 ##
 
-![](img/open-source-developers.jpg)
+:::{.center-x}
+![](img/bored_dev.webp){width=600}
+:::
 
+:::{.text04}
+Created with DALL E
+:::
+
+## Maintaining R packages
+
+:::{.center-x}
+![](img/bus-rpkg.jpg){width=700}
+:::
+
+## Maintaining R packages
+
+<br>
+
+you may eventually start reading about "software design"
+
+- [Working in Public: The Making and Maintenance of Open Source Software](https://www.amazon.de/dp/0578675862?psc=1&ref=ppx_yo2ov_dt_b_product_details)
+
+- [A Philosophy of Software Design](https://www.amazon.de/dp/173210221X?psc=1&ref=ppx_yo2ov_dt_b_product_details)
+
+- [Pragmatic Programmer, The: Your journey to mastery](https://www.amazon.de/dp/0135957052?psc=1&ref=ppx_yo2ov_dt_b_product_details)
+
+- ...
+
+## Appreciate developers
+
+:::{.center-x}
+![](img/collapse.jpg){height=700}
+:::
+
+##
+
+:::{.center-x}
+![](img/open-source-developers.jpg){width=800}
+:::
 
 
