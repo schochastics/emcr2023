@@ -302,6 +302,12 @@ remotes::install_github("username/pkgname")
 
 ##
 
+::: {.r-fit-text}
+An R package is never done
+:::
+
+##
+
 :::{.center-x}
 ![](img/mad_scientist.webp){width=600}
 :::
