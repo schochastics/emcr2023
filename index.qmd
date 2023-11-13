@@ -20,7 +20,9 @@ execute:
 
 ## My R universe
 
-<img src="img/hex_bg.png" width="400">
+:::{.center-x}
+![](img/hex_bg.png){width=700}
+:::
 
 ## Why R?
 
@@ -48,6 +50,7 @@ CRAN
 :::
 ::::
 
+::::{.columns}
 :::{.column width="32%"}
 :::{.frame-box .center-x}
 {{< fa repeat size=2x >}}  
@@ -68,7 +71,7 @@ more than SNA
 community  
 :::
 :::
-
+::::
 
 # Using R packages
 
@@ -138,7 +141,7 @@ use `network`/`sna` if
 
 ## Finding the right package
 
-<br>
+You don’t need to write everything yourself from scratch. There are thousands of R packages that people have written to solve problems. 
 
 - [CRAN taskviews](https://cran.r-project.org/web/views/)  (available since 2005, [redesigned in 2021](https://arxiv.org/abs/2305.17573))
 
@@ -158,14 +161,15 @@ You don’t need to write everything yourself from scratch. There are thousands 
 
 - [CRAN taskviews](https://cran.r-project.org/web/views/)  (available since 2005, [redesigned in 2021](https://arxiv.org/abs/2305.17573))
 
-- [r-universe.dev](https://r-universe.dev/) 
+- [r-universe.dev](https://r-universe.dev/) (R package dashboards)
 
-- [r-bloggers.com](https://www.r-bloggers.com/)
+- [r-bloggers.com](https://www.r-bloggers.com/) (blog aggregator)
 
 - social media
 
-## Using R packages
+## Help for R packages
 
+<br>
 
 Help for a function
 ```r
@@ -191,7 +195,8 @@ vignette("name-of-vignette")
 
 ::: {.r-fit-text}
 CITE  
-PACKAGES!
+PACKAGES   
+YOU USE!
 :::
 
 ## How to cite R packages
