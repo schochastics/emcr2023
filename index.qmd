@@ -218,6 +218,8 @@ or use {{< CRAN grateful >}}
 
 - [Advanced R](https://adv-r.hadley.nz/)
 
+- [How to get good with R](https://www.njtierney.com/post/2023/11/10/how-to-get-good-with-r/)
+
 # Developing R packages
 
 ## Why develop an R package?
