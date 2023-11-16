@@ -226,6 +226,8 @@ or use {{< CRAN grateful >}}
 
 - [How to get good with R](https://www.njtierney.com/post/2023/11/10/how-to-get-good-with-r/)
 
+- [What They Forgot to Teach You About R](https://rstats.wtf/)
+
 # Developing R packages
 
 ## Why develop an R package?
@@ -384,15 +386,18 @@ you may eventually start reading about "software design"
 
 ## Tips
 
-Try to keep your sanity:  
+<br>
 
 - Do not respond to all issues immediately
 
-- People WILL be rude
+- Work in intervalls
+
+- People will be rude
 
 - Most feedback will be negative
 
-- You will not know WHO uses your package
+- You will not know who uses your package
 
-
-
+:::{.center-x}
+**Try to keep your sanity**
+:::
