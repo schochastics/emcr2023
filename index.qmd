@@ -195,8 +195,7 @@ vignette("name-of-vignette")
 
 ::: {.r-fit-text}
 CITE  
-PACKAGES   
-YOU USE!
+PACKAGES!
 :::
 
 ## How to cite R packages
@@ -282,33 +281,52 @@ A package is just a folder with rules where a lot of boring things can be automa
 library(usethis)
 create_package("path/to/mypkg")
 ```
-. . .
-
-Your first packge **does not** need to go to CRAN but can comfortably live on [GitHub](https://happygitwithr.com/).
-
-```r
-#install.packages("remotes")
-remotes::install_github("username/pkgname")
-```
-
-
-
 ##
 
 :::{.center-x}
 ![](img/automagic.jpg)
 :::
 
-## Resources
+## Publish your first Package
+
+<br>
+
+Your first package **does not** need to go to CRAN but can comfortably live on [GitHub](https://happygitwithr.com/).
+
+```r
+#install.packages("remotes")
+remotes::install_github("username/pkgname")
+```
+
+<br>
+
+. . .
+
+add your account to the [r-universe](https://r-universe.dev/search/) following [these steps](https://github.com/r-universe-org/help#how-to-setup-your-personal-universe)
+
+. . .
+
+Preparing for CRAN can be tricky at first, but there [is help](https://github.com/ThinkR-open/prepare-for-cran)
+
+
+
+## Some more Resources
+
+<br>
 
 - [R Packages (2e)](https://r-pkgs.org/)
 
 - [List of resources by Maëlle Salmon](https://rpkgdev-mechanics.netlify.app/resources/)
 
+- [Submitting to CRAN](https://github.com/ThinkR-open/prepare-for-cran)
+
+- [Help for r-universe](https://github.com/r-universe-org/help)
+
 ##
 
 ::: {.r-fit-text}
-An R package is never done
+An R package is   
+never done
 :::
 
 ##
@@ -355,7 +373,7 @@ you may eventually start reading about "software design"
 ## Appreciate developers
 
 :::{.center-x}
-![](img/collapse.jpg){height=700}
+![](img/collapse.jpg){height=600}
 :::
 
 ##
@@ -363,5 +381,18 @@ you may eventually start reading about "software design"
 :::{.center-x}
 ![](img/open-source-developers.jpg){width=800}
 :::
+
+## Tips
+
+Try to keep your sanity:  
+
+- Do not respond to all issues immediately
+
+- People WILL be rude
+
+- Most feedback will be negative
+
+- You will not know WHO uses your package
+
 
 
