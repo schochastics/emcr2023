@@ -194,6 +194,29 @@ vignette("name-of-vignette")
 ##
 
 ::: {.r-fit-text}
+PUBLISH    
+CODE!
+:::
+
+## Why publish code?
+
+- make your work reproducible
+
+- adapt project oriented workflow
+
+:::{.center-x}
+![](img/set_on_fire.png)
+:::
+
+:::{.text04}
+credit to [Jenny Bryan](https://www.tidyverse.org/blog/2017/12/workflow-vs-script/)
+:::
+
+- use [research compendia](https://the-turing-way.netlify.app/reproducible-research/compendia)
+
+##
+
+::: {.r-fit-text}
 CITE  
 PACKAGES!
 :::
