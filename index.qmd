@@ -268,6 +268,35 @@ Ask yourself:
 credits to [Susan Johnston](https://raw.githubusercontent.com/susjoh/fibonacci/master/Writing_R_Packages_from_Scratch_v2_annotated.pdf) for the content
 :::
 
+## My first R package
+
+![](https://github.com/schochastics/netrankr/blob/main/man/figures/logo.png?raw=true){.absolute top=0 right=10 width=125}
+
+My Phd thesis produced a lot of R code 
+
+:::{.center-x}
+![](img/phd_folder.png){width=650}
+:::
+
+## My first R package
+
+![](https://github.com/schochastics/netrankr/blob/main/man/figures/logo.png?raw=true){.absolute top=0 right=10 width=125}
+
+- My Phd thesis also produced a lot of new methods 
+
+- To make it reusable, I decided to create an R package 
+
+:::{.center-x}
+![](img/phd_git.png)
+:::
+
+- submitted to CRAN almost a year later 😱
+
+. . .
+
+- rtoot (2022) from first line of code to CRAN in 5 days 🚀🚀🚀
+
+
 ## Your first R package
 
 <br>
