@@ -214,6 +214,8 @@ credit to [Jenny Bryan](https://www.tidyverse.org/blog/2017/12/workflow-vs-scrip
 
 - use [research compendia](https://the-turing-way.netlify.app/reproducible-research/compendia)
 
+- [book](https://raps-with-r.dev/) on reproducibility in R 
+
 ##
 
 ::: {.r-fit-text}
