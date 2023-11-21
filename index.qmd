@@ -200,21 +200,64 @@ CODE!
 
 ## Why publish code?
 
-- make your work reproducible
+. . .
 
-- adapt project oriented workflow
-
-:::{.center-x}
-![](img/set_on_fire.png)
+::: {.r-fit-text}
+make your work  
+**reproducible**
 :::
 
-:::{.text04}
+
+## Defining Reproducibility
+
+:::{.center-x}
+![](img/crcss.png){width=500}
+:::
+
+> *A result is reproducible when the **same** analysis steps
+performed on the **same** dataset consistently produce the **same** answer*
+
+. . .
+
+> A result is **externally verified computational reproducible** when the same analysis steps performed on the same dataset by **external researchers** consistently produce the same answer.
+
+## How do I make my analysis reproducible?
+
+<br>
+
+1. Publish Code! 📢
+
+2. adapt project oriented workflow 📁
+
+3. use {{< CRAN renv >}} to "freeze" packages 🥶
+
+4. consider {{< CRAN targets >}} pipeline 🎯
+
+5. use [docker](https://raps-with-r.dev/repro_cont.html) 🐋 (automate it with {{< CRAN rang >}})
+
+<br>
+
+. . .
+
+*It is tough to go all the way, but 1. - 3. puts you ahead of most people with minimal effort*
+
+
+##
+
+:::{.center-x}
+![](img/set_on_fire.png){width=900}
+:::
+
+:::{.text05}
 credit to [Jenny Bryan](https://www.tidyverse.org/blog/2017/12/workflow-vs-script/)
 :::
 
-- use [research compendia](https://the-turing-way.netlify.app/reproducible-research/compendia)
+## Resources  
 
-- [book](https://raps-with-r.dev/) on reproducibility in R 
+- [Book](https://raps-with-r.dev/) on reproducibility in R 
+
+- [Workflows for Reproducible Research with R & Git](https://github.com/jobreu/reproducible-research-gesis-2023) (Course at GESIS)
+
 
 ##
 
