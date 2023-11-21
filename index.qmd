@@ -1,7 +1,7 @@
 ---
 title: "Learning to work with R packages"
 subtitle: ""
-author: "David Schoch"
+author: "David Schoch (@schochastics)"
 footer: "EMCR Workshop 2023 {{< fa brands r-project >}}"
 institute: "GESIS - Leibniz Institute for the Social Sciences"
 shortcodes:
