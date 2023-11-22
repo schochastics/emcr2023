@@ -1,6 +1,6 @@
 ---
-title: "Learning to work with R packages"
-subtitle: ""
+title: "R You Ready to Package?"
+subtitle: "Unboxing the Fun in R Development"
 author: "David Schoch (@schochastics)"
 footer: "EMCR Workshop 2023 {{< fa brands r-project >}}"
 institute: "GESIS - Leibniz Institute for the Social Sciences"
@@ -17,6 +17,49 @@ format:
 execute: 
   echo: true
 ---
+
+##
+
+:::{.r-fit-text .center-x}
+Slides are available at  
+<https://schochastics.github.io/emcr2023>
+:::
+
+## My journey
+
+<br>
+
+- PhD in Konstanz in 2015 ("Network Centrality") 🎓
+
+- PostDoc at ETH 2017-2018 🍫
+
+- Presidential Fellow at Manchester 2018-2022 👑 
+
+- (Applied for several Professorships, no interview) 😔
+
+- Team Lead at GESIS since 2022 ⛪
+
+##
+
+![](img/linkR.png)
+
+## Confession
+
+. . .
+
+::: {.r-fit-text}
+I don't do networks anymore
+:::
+
+:::{.center-x}
+![](img/omg.webp){width=350}
+:::
+
+##
+
+:::{.center-x}
+![](img/rse.jpg){width=700}
+:::
 
 ## Me and my R
 
@@ -75,7 +118,7 @@ community
 :::
 ::::
 
-# Using R packages
+# Working with R packages
 
 ## R Ecosystem for networks
 
@@ -171,33 +214,36 @@ You don’t need to write everything yourself from scratch. There are thousands 
 
 ## Help for R packages
 
-<br>
-
-Help for a function
 ```r
 ?function_name
 help(function_name)
 ??function_name
-```
-
-. . .
-
-Help for the package
-
-```r
 browseVignettes(package = "name-of-package")
 vignette("name-of-vignette")
 ```
-
 . . .
 
 {{< CRAN pkgdown >}} website
+
+. . .
+
+- Tutorial for Network Visualization: <https://www.mr.schochastics.net/material/netVizR/>
+
+- Tutorial for Network Analysis: <https://www.mr.schochastics.net/material/netAnaR/>
+
+- Tutorial for Tidy Network Analysis: <https://www.mr.schochastics.net/material/tidynetAnaR/>
 
 ##
 
 ::: {.r-fit-text}
 PUBLISH    
 CODE!
+:::
+
+##
+
+:::{.center-x}
+![](img/excuses-files.gif){width=600}
 :::
 
 ## Why publish code?
@@ -265,6 +311,7 @@ credit to [Jenny Bryan](https://www.tidyverse.org/blog/2017/12/workflow-vs-scrip
 
 - [Workflows for Reproducible Research with R & Git](https://github.com/jobreu/reproducible-research-gesis-2023) (Course at GESIS)
 
+- [Computational Reproducibility in Computational Social Science](https://arxiv.org/abs/2307.01918)
 
 ##
 
@@ -282,6 +329,18 @@ citation("graphlayouts")
 
 or use {{< CRAN grateful >}}
 
+. . .
+
+## Normalize citing software!✊ 
+
+<br><br>
+
+![](img/graphlayouts-download.png)
+![](img/graphlayouts-citations.png)
+
+. . .
+
+I am not salty 🙊
 
 ## Resources
 
@@ -337,7 +396,9 @@ Ask yourself:
 
 . . . 
 
-**Congrats, you can develop an R package**
+:::{.center-x}
+🎉🎉🎉**Congrats, you can develop an R package**🎉🎉🎉
+:::
 
 :::{.aside}
 credits to [Susan Johnston](https://raw.githubusercontent.com/susjoh/fibonacci/master/Writing_R_Packages_from_Scratch_v2_annotated.pdf) for the content
@@ -362,15 +423,20 @@ My Phd thesis produced a lot of R code
 - To make it reusable, I decided to create an R package 
 
 :::{.center-x}
-![](img/phd_git.png)
+![](img/phd_git.png){width=400}
 :::
 
 - submitted to CRAN almost a year later 😱
 
 . . .
 
-- rtoot (2022) from first line of code to CRAN in 5 days 🚀🚀🚀
+- rtoot (2022) from first line of code to CRAN in 5 days 🚀
 
+. . .
+
+:::{.center-x}
+**Do not hesitate to get your code out asap!**
+:::
 
 ## Your first R package
 
@@ -414,7 +480,15 @@ add your account to the [r-universe](https://r-universe.dev/search/) following [
 
 Preparing for CRAN can be tricky at first, but there [is help](https://github.com/ThinkR-open/prepare-for-cran)
 
+. . .
 
+Being rejected from CRAN happens to all of us
+
+## Write a software paper
+
+:::{.center-x}
+![](img/software_paper.png){width=750}
+:::
 
 ## Some more Resources
 
@@ -456,7 +530,7 @@ Created with DALL E
 Created with DALL E
 :::
 
-## Maintaining R packages
+##
 
 :::{.center-x}
 ![](img/bus-rpkg.jpg){width=700}
@@ -466,7 +540,7 @@ Created with DALL E
 
 <br>
 
-you may eventually start reading about "software design"
+you may eventually start reading about "software development"
 
 - [Working in Public: The Making and Maintenance of Open Source Software](https://www.amazon.de/dp/0578675862?psc=1&ref=ppx_yo2ov_dt_b_product_details)
 
@@ -474,7 +548,7 @@ you may eventually start reading about "software design"
 
 - [Pragmatic Programmer, The: Your journey to mastery](https://www.amazon.de/dp/0135957052?psc=1&ref=ppx_yo2ov_dt_b_product_details)
 
-- ...
+- [uncurled](https://un.curl.dev/)
 
 ## Appreciate developers
 
@@ -505,3 +579,21 @@ you may eventually start reading about "software design"
 :::{.center-x}
 **Try to keep your sanity**
 :::
+
+## Summary
+
+**Working with R**  
+
+- Publish your code
+
+- Cite packages in your paper
+
+**Developing R packages**  
+
+- You can develop an R package
+
+- Put it online before the first line of code
+
+- Write a software paper
+
+- Creating is fun, maintaining not so much
